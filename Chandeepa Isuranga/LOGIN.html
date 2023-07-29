@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="LOGIN.css">
+    <link rel="stylesheet" href="../Lakindu Virajith/BACK_BUTTON.css">
+    <link rel="stylesheet" href="../Hashini Ruwanthika/FOOTER.css">
+    <script type="text/javascript" src="../Anushka Dilshan/BACK_BUTTON.js"></script>
+    <script type="text/javascript" src="LOGIN.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 id="header">LOGIN</h1>
+
+        <ul id="n_bar">
+            <li><a href="../Hashini Ruwanthika/HOME.html">Home</a></li>
+            <li><a href="../Nipunika Sathsarani/LOCATION.html">Location</a></li>
+            <li><a href="../Nipunika Sathsarani/APARTMENT.html">Apartment</a></li>
+            <li><a href="BOOK_NOW.html">Book Now</a></li>
+            <li><a href="../Anushka Dilshan/CONTACT_US.html">Contact Us</a></li>
+            <li><a href="../Hashini Ruwanthika/ABOUT_US.html">About Us</a></li>
+        </ul>
+
+        <button id="back_b" onclick="goBack()">BACK</button>
+    </header></br>
+
+
+    <h1 align="center">Welcome Back</h1>
+    <div class="main_form">
+        <form method="POST" action="GET_USER.php">
+        <p><label for="Uname"><b>Username [Email]</b></label></p>
+        <p><input type="text" placeholder="Enter Username" name="UN" id="UN" required></p>
+  
+        <p><label for="psw"><b>Password</b></label></p>
+        <p><input type="password" placeholder="Enter Password" name="PW" id="PW" required></p>
+        </form>
+          
+        <input type="checkbox" name="remember"> Remember me</br></br>
+        <a class="link" href="../Anushka Dilshan/CONTACT_US.html">Forgot Password</a>
+        <p>
+            <input type="submit" value="Login" name="Submit" id="Submit" onclick="validate()"></a>
+        </p>
+        <p id="Sign">Not Register Yet? <a class="link" href="../Lakindu Virajith/SIGN_UP.html" >Sign Up Now</a></p>
+    </div>
+
+
+    <div class="footer">
+        <footer class="footer-distributed">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <div class="footer-right">
+                <div class="icons"><br>
+         
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-instagram"></a>
+             <a href="#" class="fa fa-google-plus"></a>
+         
+            </div>
+         </div>
+         
+            <div class="footer-left">
+         
+             <p class="footer-links">
+              
+         <a href="#">Hotline: +94 117 457 767 | +94 770 333 877</a><br>
+         
+              <a href="#">Apartment Location: CityViews(Pvt) Ltd.Tower, Wellawatte, Sri Lanka</a>
+             </p>
+         
+             <p>All recerved.Terms of use|Privacy policy</p>
+            </div>
+         
+        </footer>
+    </div>
+    
+</body>
+</html>
