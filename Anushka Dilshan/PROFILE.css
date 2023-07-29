@@ -1,0 +1,65 @@
+body {
+    margin: 40px 40px 40px 40px;
+    background-image: url(../IMAGES/PRO_BACK.jpg);
+    background-size: cover;
+	background-position: left;
+}
+form{
+	padding:50px 0px 50px 0px;
+	text-align: center;
+	background:rgb(40, 40, 40);
+	font-size:14px;
+	font-family:verdana;
+	color:white;
+	text-transform: uppercase;
+	border-radius: 4px;
+	margin: 0px 400px 40px 400px;
+}
+.prof{
+	text-align: center;
+	color: rgb(255, 255, 255);
+	margin-top: 40px;
+}
+h2{
+	text-align: center;
+	font-size: 32px;
+	color: rgb(255, 255, 255);
+	padding: 20px 0px 40px 0px;
+}
+.box {
+	background-color: rgb(40, 40, 40);
+	border-radius: 6px;
+	margin-bottom: 40px;
+}
+input[type="text"]{
+	height: 40px;
+	width: 400px;
+}
+input[type="email"]{
+	height: 40px;
+	width: 400px;
+}
+input[type="phone"]{
+	height: 40px;
+	width: 400px;
+}
+#edit {
+	background-color: rgb(70, 70, 70);
+	color: white;
+	height: 40px;
+	width: 404px;
+	font-family:verdana;
+}
+#save {
+	background-color: rgb(70, 70, 70);
+	color: white;
+	height: 40px;
+	width: 404px;
+	font-family:verdana;
+}
+fieldset {
+	text-align: center;
+	font-size: 28px;
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
