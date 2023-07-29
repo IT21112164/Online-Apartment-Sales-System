@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="../Lakindu Virajith/NAVIGATION.css">
+    <link rel="stylesheet" href="../Hashini Ruwanthika/FOOTER.css">
+	<link rel="stylesheet" href="CONTACT_US.css">
+	<script src="CONTACT_US.js"></script>
+</head>
+<body>
+	
+    <header>
+        <img src="../IMAGES/LOGO.png" id="logo" alt="LOGO" height="74px">
+        
+        <a href="PROFILE.html">
+        <img src="../IMAGES/PROFILE.jpg" id="profile" alt="PROFILE"></a>
+
+        <ul id="n_bar">
+            <li><a href="../Hashini Ruwanthika/HOME.html">Home</a></li>
+            <li><a href="../Nipunika Sathsarani/LOCATION.html">Location</a></li>
+            <li><a href="../Nipunika Sathsarani/APARTMENT.html">Apartment</a></li>
+            <li><a href="../Chandeepa Isuranga/BOOK_NOW.html">Book Now</a></li>
+            <li><a href="CONTACT_US.html">Contact Us</a></li>
+            <li><a href="../Hashini Ruwanthika/ABOUT_US.html">About Us</a></li>
+        </ul>
+
+        <button id="b1"><a href="../Chandeepa Isuranga/LOGIN.html">Login</a></button>
+        <button id="b2"><a href="../Lakindu Virajith/SIGN_UP.html">Sign up</a></button>
+
+        <hr></hr>
+    </header>
+
+	<center>
+	<h1 id="question">HAVE A QUESTION? WE HAVE ANSWER</h1>
+	</center>
+	
+    <div class="form">
+	<form method="POST" action="SUBMIT_CONTACT.php">
+
+    <label for="name">Full Name</lable></br></br>
+    <input type="text" id="name" name="name" placeholder="David Erman" required></br></br>
+    <label for="email">E mail address</lable></br></br>
+    <input type="email"  id="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required></br></br> 
+    <label for="phoneNum">Telephone</lable></br></br>
+    <input type="phone" id="phoneNum" name="phoneNum" placeholder="012345679" pattern="[0-9]{10}" required></br></br>
+    <label for="massage">Message</lable></br></br>
+    <textarea id="massage" name="massage" rows="10" cols="52" required></textarea></br></br>
+    <input type="checkbox" name="terms" id="checkditals" onclick="enableButton()" >Check Fill The details - required</br></br>
+	<input id="submit" type="submit" disabled>
+
+	</form>
+    </div>
+	
+    <div class="footer">
+        <footer class="footer-distributed">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <div class="footer-right">
+                <div class="icons"><br>
+         
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-instagram"></a>
+             <a href="#" class="fa fa-google-plus"></a>
+         
+            </div>
+         </div>
+         
+            <div class="footer-left">
+         
+             <p class="footer-links">
+              
+         <a href="#">Hotline: +94 117 457 767 | +94 770 333 877</a><br>
+         
+              <a href="#">Apartment Location: CityViews(Pvt) Ltd.Tower, Wellawatte, Sri Lanka</a>
+             </p>
+         
+             <p>All recerved.Terms of use|Privacy policy</p>
+            </div>
+         
+        </footer>
+    </div>
+
+</body>
+</html>
