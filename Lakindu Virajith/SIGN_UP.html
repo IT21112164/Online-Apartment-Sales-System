@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="SIGN_UP.css">
+    <link rel="stylesheet" href="BACK_BUTTON.css">
+    <link rel="stylesheet" href="../Hashini Ruwanthika/FOOTER.css">
+    <script type="text/javascript" src="SIGN_UP.js"></script>
+    <script type="text/javascript" src="../Anushka Dilshan/BACK_BUTTON.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <h1 id="header">SIGN UP</h1>
+
+    <!-- Navigation Bar -->
+    <ul id="n_bar">
+        <li ><a href="../Hashini Ruwanthika/HOME.html">Home</a></li>
+        <li ><a href="../Nipunika Sathsarani/LOCATION.html">Location</a></li>
+        <li ><a href="../Nipunika Sathsarani/APARTMENT.html">Apartment</a></li>
+        <li ><a href="../Chandeepa Isuranga/BOOK_NOW.html">Book Now</a></li>
+        <li ><a href="../Anushka Dilshan/CONTACT_US.html">Contact Us</a></li>
+        <li ><a href="../Hashini Ruwanthika/ABOUT_US.html">About Us</a></li>
+    </ul>
+
+    <!-- Sign Up Form -->
+    <form method="POST" action="SUBMIT_SIGN_UP.php">
+        <p>First Name<br><input type="text" name="F_Name" id="F_Name" required></p>
+        <p id="LName">Last Name<br><input type="text" name="L_Name" id="L_Name" required></p>
+
+        <div id="position_1">
+        <p>E-mail<br><input type="email" name="Email" id="Email" placeholder="xyz2000@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required></p>
+        <p>Password<br><input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required></p>
+        <p>Confirm Password<br><input type="password" name="c_psw" id="c_psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required></p>
+        <p>Mobile Number<br><input type="phone" name="mobile" id="mobile" placeholder="0770011100 - No Spaces" pattern="[0-9]{10}" required></p>
+        <p>Date of Birth<br><input type="date" name="birth" id="birth"></p>
+        <p id="Gen">Gender<br><input type="radio" value="Male" name="GEN" checked>Male
+                     <input type="radio" value="Female" name="GEN">Female</p>
+        </div>
+
+        <div id="position_2">
+        <p>Home Address<br><textarea rows="4" cols="53" name="addr" id="addr"></textarea></p>
+        <p><input type="checkbox" id="agree" onclick="checkButton()">I read and agree to Terms & Conditins - Required to Submit</p>
+        <p><input type="submit" id="submit" value="SIGN UP" onclick="validate()" disabled></p>
+        <pre id="pre">Already have an account       <a href="../Chandeepa Isuranga/LOGIN.html">Login</a></pre>
+        </div>
+    </form>
+
+    <!-- Apartment Preview Image-->
+    <img src="../IMAGES/APARTMENT.jpg" alt="APARTMENT PREVIEW" id="Apartment">
+
+    <!-- Password Condition-->
+    <div id="message">
+        <p>Must contain a <b>lowercase</b> letter & <b>uppercase</b> letter</p>
+        <p>And  a <b>number</b> & <b>8 characters</b> up to 16</p>
+    </div>
+
+    <!-- Back Button-->
+    <button id="back_b" onclick="goBack()">BACK</button>
+
+    <div class="footer">
+        <footer class="footer-distributed">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <div class="footer-right">
+                <div class="icons"><br>
+         
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-instagram"></a>
+             <a href="#" class="fa fa-google-plus"></a>
+         
+            </div>
+         </div>
+         
+            <div class="footer-left">
+         
+             <p class="footer-links">
+              
+         <a href="#">Hotline: +94 117 457 767 | +94 770 333 877</a><br>
+         
+              <a href="#">Apartment Location: CityViews(Pvt) Ltd.Tower, Wellawatte, Sri Lanka</a>
+             </p>
+         
+             <p>All recerved.Terms of use|Privacy policy</p>
+            </div>
+         
+        </footer>
+    </div>
+    
+</body>
+</html>
