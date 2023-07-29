@@ -1,0 +1,21 @@
+/* Back Button Setup */
+#back_b {
+    position: absolute;
+    top: 32px;
+    right: 3%;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(40, 40, 40);
+    font-size: 140%;
+    height: 74px;
+    width: 140px;
+}
+#back_b:hover {
+    background-color: rgb(95, 211, 114);
+    border: none;
+    cursor: pointer;
+}
+#back_b a {
+    text-decoration: none;
+    color: rgb(110, 100, 250);
+}

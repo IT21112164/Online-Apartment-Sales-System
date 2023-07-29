@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="PAYMENT.css">
+    <link rel="stylesheet" href="../Hashini Ruwanthika/FOOTER.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="PAYMENT.js"></script>
+    <script type="text/javascript" src="../Anushka Dilshan/BACK_BUTTON.js"></script>
+</head>
+<body>
+
+    <hr></hr>
+    <hr></hr>
+
+    <!-- Header -->
+    <img src="../IMAGES/LOGO.png" id="logo" alt="LOGO" height="74px">
+    <h1 id="top">BOOK NOW YOUR APARTMENT</h1>
+    <button id="back" onclick="goBack()">BACK</button>
+
+    <hr></hr>
+    <hr></hr>
+
+    <!-- Payment Form -->
+    <div id="full_form">
+        <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">PAYMENT INFORMATION</h2>
+        <h3 style="font-family: Arial, Helvetica, sans-serif; margin-left: 100px;">Payment Options</h3>
+
+        <div style="font-size: 48px;">
+            <i class="fa fa-cc-visa"></i>
+            <i class="fa fa-cc-mastercard"></i>
+            <i class="fa fa-cc-amex"></i>
+            <i class="fa fa-cc-discover"></i>
+            <i class="fa fa-cc-paypal"></i>
+        </div>
+        <h3 style="font-family: Arial, Helvetica, sans-serif; margin-left: 100px;">Payment Details</h3>
+        <form method="POST" action="SUBMIT_PAYMENT.php">
+            <p>Name on Card<br><input type="text" name="Name" id="Name" placeholder="Akila Kumara" required></p>
+            <p>Card Number<br><input type="number" name="Pay" id="Pay" placeholder="0000 1111 0000 1111" required></p>
+            <p>Expire Date<br>
+                <input type="text" name="M_Date" id="M_Date" placeholder="Month / EX - 02" pattern="[0-9]{2}" required> 
+                <input type="text" name="Y_Date" id="Y_Date" placeholder="Year / EX - 2022" pattern="[0-9]{4}" id="year" required></p>
+            <p>Security Code<br><input name="Code" id="Code" type="number" placeholder="CVV" required></p>
+            <p><input type="submit" value="Confirm Payment" id="pay" onclick="validatepay()"></p>
+        </form>
+    </div>
+
+    <!-- Order Information -->
+    <div id="order">
+        <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">ORDER INFORMATION</h2><br>
+        <b><pre class="cal">Currency                                        LKR</pre>
+        <pre class="cal">Amount                                          120,000</pre>
+        <pre class="cal">Discount                                         10,500</pre>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <pre class="cal">Total                                               109,500</pre></b>
+    </div>
+
+    <hr></hr>
+    <hr></hr><br>
+
+    <div class="footer">
+        <footer class="footer-distributed">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <div class="footer-right">
+                <div class="icons"><br>
+         
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-instagram"></a>
+             <a href="#" class="fa fa-google-plus"></a>
+         
+            </div>
+         </div>
+         
+            <div class="footer-left">
+         
+             <p class="footer-links">
+              
+         <a href="#">Hotline: +94 117 457 767 | +94 770 333 877</a><br>
+         
+              <a href="#">Apartment Location: CityViews(Pvt) Ltd.Tower, Wellawatte, Sri Lanka</a>
+             </p>
+         
+             <p>All recerved.Terms of use|Privacy policy</p>
+            </div>
+         
+        </footer>
+    </div>
+    
+</body>
+</html>

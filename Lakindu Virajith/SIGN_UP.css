@@ -1,0 +1,90 @@
+/* Background */
+body {
+    margin: 40px 40px 40px 40px;
+    background-image: url(../IMAGES/BACKGROUND.jpg);
+    background-size: cover;
+}
+/* Apartment Preview Image */
+#Apartment {
+    position: absolute;
+    top: 149.5px;
+    left: 716px;
+    width: 758.5px;
+}
+/* Sign Up */
+#header {
+    color: rgb(40, 40, 40);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 280%;
+}
+/* Navigation Bar */
+#n_bar {
+    list-style-type: none;
+    padding-left: 17%;
+    position: relative;
+    bottom: 89px;
+}
+#n_bar :hover{
+    background-color: rgb(95, 211, 114);
+}
+li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+    padding: 24px 34px 24px 34px;
+}
+/* Form Setup*/
+form {
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 40, 40);
+    border-radius: 20px;
+    padding-left: 8%;
+    padding-top: 5%;
+    margin: 4% 20% 2% 0%;
+}
+#pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#submit {
+    color: white;
+    background-color: rgb(30, 30, 30);
+    height: 50px;
+    width: 408px;
+}
+#submit:hover {
+    background-color: rgb(95, 211, 114);
+    border: none;
+}
+#LName {
+    position: relative;
+    left: 240px;
+    bottom: 56px;
+}
+#Gen {
+    position: relative;
+    left: 240px;
+    bottom: 57px;
+}
+#position_1 {
+    position: relative;
+    bottom: 57px;
+}
+#position_2 {
+    position: relative;
+    bottom: 110px;
+}
+#message {
+    position: absolute;
+    top: 340px;
+    left: 395px;
+    font-size: 12px;
+    
+}
+b {
+    color: rgb(110, 100, 250);
+}
