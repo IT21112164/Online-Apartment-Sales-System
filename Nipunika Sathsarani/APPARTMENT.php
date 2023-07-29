@@ -1,0 +1,205 @@
+   <!-- PHP Connect -->
+<?php
+   include_once '../Anushka Dilshan/CONFIG.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>APPARTMENT</title>
+    <link rel="stylesheet" href="../Lakindu Virajith/NAVIGATION.css">
+    <link rel="stylesheet" href="../Hashini Ruwanthika/FOOTER.css">
+    <script src="js/CHANGE_IMAGE.js"></script>
+	<script src = "APPARTMENT.js"></script>
+    <link rel="stylesheet" href="APPARTMENT.css">
+</head>
+<body>
+
+    <header>
+        <img src="../IMAGES/LOGO.png" id="logo" alt="LOGO" height="74px">
+        
+        <a href="../Anushka Dilshan/PROFILE.html">
+        <img src="../IMAGES/PROFILE.jpg" id="profile" alt="PROFILE"></a>
+
+        <ul id="n_bar">
+            <li><a href="../Hashini Ruwanthika/HOME.html">Home</a></li>
+            <li><a href="LOCATION.html">Location</a></li>
+            <li><a href="#">Apartment</a></li>
+            <li><a href="../Chandeepa Isuranga/BOOK_NOW.html">Book Now</a></li>
+            <li><a href="../Anushka Dilshan/CONTACT_US.html">Contact Us</a></li>
+            <li><a href="../Hashini Ruwanthika/ABOUT_US.html">About Us</a></li>
+        </ul>
+
+        <button id="b1"><a href="../Chandeepa Isuranga/LOGIN.html">Login</a></button>
+        <button id="b2"><a href="../Lakindu Virajith/SIGN_UP.html">Sign up</a></button>
+
+        <hr></hr>
+    </header>
+
+    <centre><div class="card">
+		<div class="container">
+			<div class="container">
+				<h2 style="text-align:center">Luxury Serviced Apartment in Wellawatte</h2>
+				<div class="mySlides">
+				  <div class="numbertext">1 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/1_wide.jpg" style="width:100%" style="height:40%">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">2 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/2_wide.jpg" style="width:100%">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">3 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/3_wide.jpg" style="width:100%">
+				</div>
+				  
+				<div class="mySlides">
+				  <div class="numbertext">4 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/4_wide.jpg" style="width:100%">
+				</div>
+			  
+				<div class="mySlides">
+				  <div class="numbertext">5 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/5_wide.jpg" style="width:100%">
+				</div>
+				  
+				<div class="mySlides">
+				  <div class="numbertext">6 / 6</div>
+				  <img src="../IMAGES/Nipunika_Sathsarani/6_wide.jpeg" style="width:100%">
+				</div>
+				  
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			  
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+			  
+				<div class="row">
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bed Room No.1">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Open kitchen area">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dining area">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bathroom No.1">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bedroom No.2">
+				  </div>    
+				  <div class="column">
+					<img class="demo cursor" src="../IMAGES/Nipunika_Sathsarani/6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Bathroom No.2">
+				  </div>
+
+
+			</div>
+			</div>
+
+
+
+	<div class="card">
+	  <div class="container">
+
+	
+<!--TABLE CREATION-->
+	<div class = "cen" class = "p2">
+		<span>
+		<!--Table-->
+		<div >
+		<?php
+        include_once 'FETCH.php';
+
+        while ($row = mysqli_fetch_assoc($result1)) {
+        echo "
+			<table>
+			<tr>
+			<th>Property Type:</th>
+				<td>" . $row['property_Type'] . "</td>
+				<th>Area of Land</th>
+				<td>" . $row['Area_Land'] . "s</td>
+			</tr>
+			<tr>
+			<th>Bedrooms:</th>
+				<td>" . $row['B_rooms'] . "</td>
+				<th>Availability:</th>
+				<td>" . $row['Availibilty'] . "</td>
+			</tr>
+			<tr>
+			<th>Bathrooms/WCs:</th>
+				<td>" . $row['Bath_rooms'] . "</td>
+				<th>Price per sq.ft:</th>
+				<td>" . $row['Price_persq'] . "</td>
+			</tr>
+			<tr>
+			<th>No.Of Floors:</th>
+				<td>" . $row['No_of_Floors'] . "</td>
+			</tr>
+			<tr>
+			<th>Construction Status:</th>
+				<td>" . $row['C_Status'] . "</td>
+			</tr>
+		</span>
+		</table>";}
+		?>
+	</div>
+</span>
+</div>
+</div>
+
+</div>
+</div>
+</centre>
+
+<div class="card">
+<div class="container">
+	<h3>Property details</h3>
+
+	<p>To briefly introduce this international award winning project, we offer exquisitely designed ocean side apartments that are;<br><br>
+		* 	Offered Fully Furnished, Equipped, Accessorized and Ready to Move in at No Additional Costs<br><br>
+		* 	Free Hold Property in Wellawatte with a spectacular view of the Ocean, Harbour (3rd residential floor upwards)<br><br>
+		* 	A Guaranteed Rental Return minimum of 4% up to 8% per annum and a High Capital Appreciation<br><br>
+		* 	No Monthly Maintenance Fees, No Utility Bills for a period of 05 Years (Renewable thereafter)<br><br>
+		* 	A Range of Common Facilities, Amenities and Services such as a luxurious pool & a day club area, a Mediterranean styled rooftop lounge and bistro with a breathtaking 360 degree view of the Wallawatta,
+		Dedicated Cafe and Restaurant, Children's Play Area, Fitness Center, Business Center, 24-hour front desk, housekeeping etc.<br>
+	</p>
+</div>
+</div>
+</div>
+
+<div class="footer">
+    <footer class="footer-distributed">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="footer-right">
+        <div class="icons"><br>
+     
+         <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+         <a href="#" class="fa fa-instagram"></a>
+         <a href="#" class="fa fa-google-plus"></a>
+     
+        </div>
+    </div>
+     
+        <div class="footer-left">
+     
+         <p class="footer-links">
+          
+     <a href="#">Hotline: +94 117 457 767 | +94 770 333 877</a><br>
+     
+          <a href="#">Apartment Location: CityViews(Pvt) Ltd.Tower, Wellawatte, Sri Lanka</a>
+         </p>
+     
+         <p>All recerved.Terms of use|Privacy policy</p>
+        </div>
+     
+    </footer>
+</div>
+</body>
+</html>
