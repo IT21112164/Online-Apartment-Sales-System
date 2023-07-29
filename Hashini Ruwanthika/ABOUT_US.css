@@ -1,0 +1,42 @@
+body {
+    font-weight:Century Gothic;
+    background:url("../IMAGES/AP_BACKGROUND.png");
+    background-size:cover;
+   }
+.container{
+      height: 44vh;
+      width: 58%;
+      background: rgba(0, 0, 0, .8);
+      transform: translate(-50%,-50%);
+      padding:20px;
+      margin-left: 740px;
+      margin-top: 340px;
+      margin-bottom: -140px;
+      padding-bottom:150px;
+}
+  
+.container h1{
+      color:white;
+      margin-top:50px;
+}
+.container p{
+      color: white;
+      font-size: 24px;
+      margin-top: 60px;
+}
+.btn {
+      background: no-repeat;
+      outline:none;
+      border:1px solid white;
+      color: white;
+      width: 50%;
+      padding: 7px 15px;
+      font-size: large;
+      cursor: pointer;
+      transition:0.3s ease;
+      margin-top:50px;
+}
+.btn:hover{
+      background: white;
+      color: black;
+}
